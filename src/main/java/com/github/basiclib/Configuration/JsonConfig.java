@@ -23,11 +23,11 @@ import java.util.Map;
 public class JsonConfig implements ConfigInterface,JsonConfigInterface{
 
     //存储JSON内容
-    private volatile JSONObject jsonObject;
+    volatile private JSONObject jsonObject;
     //配置文件路径
-    private final String configPath;
+    final private String configPath;
     //日志API
-    private final Logger logger = new LoggerBase();
+    final private Logger logger = new LoggerBase();
 
     /**
      * 初始化一个新的配置文件管理器
