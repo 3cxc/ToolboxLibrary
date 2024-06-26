@@ -1,2 +1,2 @@
-# PluginBasicLibrary
-一个基于Java提供一些基本功能的Java包项目，方便进行相关开发
+# ToolboxLibrary
+提供一些基本功能的Java包项目，方便作者进行项目开发
