@@ -40,4 +40,9 @@ public class LoggerBase implements Logger {
     public void error(String message, Object p0, Object p1) {
         LoggerBase.logger.error(message,p0,p1);
     }
+
+    @Override
+    public void debug(Object message){
+        LoggerBase.logger.debug(message);
+    }
 }
