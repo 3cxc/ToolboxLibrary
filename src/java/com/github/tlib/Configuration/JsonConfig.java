@@ -26,6 +26,11 @@ public class JsonConfig implements ConfigInterface,JsonConfigInterface{
     final private String configPath;
     final private Logger logger = new LoggerBase();
 
+    public JsonConfig(){
+        jsonObject = null;
+        configPath = null;
+    }
+
     /**
      * 初始化一个新的配置文件管理器
      * @param path 配置文件路径
@@ -194,7 +199,7 @@ public class JsonConfig implements ConfigInterface,JsonConfigInterface{
     @Override
     @SuppressWarnings("ResultOfMethodCallIgnored")
     public void saveConfig(){
-        if (configPath != null & jsonObject != null){
+        if (configPath != null && jsonObject != null){
             File config = new File(configPath);
             File oldConfig = new File(configPath+".old");
             File newConfig = new File(configPath+".loc");
@@ -220,7 +225,6 @@ public class JsonConfig implements ConfigInterface,JsonConfigInterface{
         }
     }
 
-    @Override
     public boolean exists(){
         return configPath != null && new File(configPath).exists();
     }

@@ -12,5 +12,4 @@ public interface ConfigInterface {
     String getPath();
     void reloadConfig();
     void saveConfig();
-    boolean exists();
 }
